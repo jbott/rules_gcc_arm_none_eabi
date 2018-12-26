@@ -8,6 +8,7 @@ filegroup(
 cc_toolchain_suite(
     name = "toolchain",
     toolchains = {
+        "cortex-m4": ":cc-compiler-cortex-m4",
         "cortex-m4|compiler": ":cc-compiler-cortex-m4",
     },
 )
